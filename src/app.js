@@ -9,7 +9,7 @@ import * as d3_sankey from 'd3-sankey';
 const width = 800, height = 500;
 let zr = zrender.init(document.querySelector("#canvas"));
 
-fetch('../data/energy.json')
+fetch('data/energy.json')
    .then((d) => {
       d.json()
          .then((data) => {
